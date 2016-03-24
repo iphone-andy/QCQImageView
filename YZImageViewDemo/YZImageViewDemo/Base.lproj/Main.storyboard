@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CEn-HP-gvK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,18 +24,25 @@
                                     <constraint firstAttribute="width" constant="200" id="w0J-y5-9UU"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="daD-ZS-W9Z" customClass="YZImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="daD-ZS-W9Z" customClass="YZImageView">
                                 <rect key="frame" x="89" y="198" width="200" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="BqW-JO-Sk9"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80q-6t-j1x" customClass="YZImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="80q-6t-j1x" customClass="YZImageView">
                                 <rect key="frame" x="89" y="341" width="200" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="tbs-MC-NtN"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hme-qn-RmU">
+                                <rect key="frame" x="142" y="530" width="80" height="30"/>
+                                <state key="normal" title="progressive"/>
+                                <connections>
+                                    <segue destination="MPT-5l-cK7" kind="show" id="RhU-ij-tPP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,6 +57,7 @@
                             <constraint firstItem="OQc-hg-w6x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tBu-xx-gV2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tAf-Ae-fNQ"/>
                     <connections>
                         <outlet property="test1" destination="OQc-hg-w6x" id="C8B-2H-rm8"/>
                         <outlet property="test2" destination="daD-ZS-W9Z" id="far-i9-ETt"/>
@@ -57,6 +65,50 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="337"/>
+        </scene>
+        <!--Progressive View Controller-->
+        <scene sceneID="3KV-X4-Zgs">
+            <objects>
+                <viewController id="MPT-5l-cK7" customClass="ProgressiveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MMq-Xn-5xf"/>
+                        <viewControllerLayoutGuide type="bottom" id="hA4-z0-u6V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GZF-IC-LEC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="82M-Ti-JqR">
+                                <rect key="frame" x="20" y="82" width="315" height="401"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressImageView" destination="82M-Ti-JqR" id="kzF-3y-FZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHs-3L-aBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yI3-GQ-TMz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CEn-HP-gvK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vWK-QW-jQG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="beQ-gz-4vy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxo-9s-Nmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="337"/>
         </scene>

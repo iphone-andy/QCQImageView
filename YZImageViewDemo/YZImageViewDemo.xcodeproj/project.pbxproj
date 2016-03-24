@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D37D5EAD1C3519EB0020D61A /* YZImageView+GestureControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D37D5EAB1C3519EB0020D61A /* YZImageView+GestureControl.m */; settings = {ASSET_TAGS = (); }; };
+		D38491E41C451CF700A466B7 /* ProgressiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D38491E31C451CF700A466B7 /* ProgressiveViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D38491E81C45EDF300A466B7 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38491E71C45EDF300A466B7 /* CoreImage.framework */; };
 		D3EEFB691C224DC6005E96B6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EEFB681C224DC6005E96B6 /* MobileCoreServices.framework */; };
 		D3FCA4D61C2154CF00CFF703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FCA4D51C2154CF00CFF703 /* main.m */; };
 		D3FCA4D91C2154CF00CFF703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FCA4D81C2154CF00CFF703 /* AppDelegate.m */; };
@@ -46,6 +48,9 @@
 		D37D5EAA1C3519EB0020D61A /* YZImageView+GestureControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YZImageView+GestureControl.h"; sourceTree = "<group>"; };
 		D37D5EAB1C3519EB0020D61A /* YZImageView+GestureControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YZImageView+GestureControl.m"; sourceTree = "<group>"; };
 		D37D5EAC1C3519EB0020D61A /* YZWeakDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZWeakDefine.h; sourceTree = "<group>"; };
+		D38491E21C451CF700A466B7 /* ProgressiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressiveViewController.h; sourceTree = "<group>"; };
+		D38491E31C451CF700A466B7 /* ProgressiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressiveViewController.m; sourceTree = "<group>"; };
+		D38491E71C45EDF300A466B7 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D3EEFB681C224DC6005E96B6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D3FCA4D11C2154CF00CFF703 /* YZImageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZImageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FCA4D51C2154CF00CFF703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38491E81C45EDF300A466B7 /* CoreImage.framework in Frameworks */,
 				D3EEFB691C224DC6005E96B6 /* MobileCoreServices.framework in Frameworks */,
 				D3FCA51A1C2166AF00CFF703 /* ImageIO.framework in Frameworks */,
 			);
@@ -128,6 +134,8 @@
 				D3FCA4D81C2154CF00CFF703 /* AppDelegate.m */,
 				D3FCA4DA1C2154CF00CFF703 /* ViewController.h */,
 				D3FCA4DB1C2154CF00CFF703 /* ViewController.m */,
+				D38491E21C451CF700A466B7 /* ProgressiveViewController.h */,
+				D38491E31C451CF700A466B7 /* ProgressiveViewController.m */,
 				D3FCA4DD1C2154CF00CFF703 /* Main.storyboard */,
 				D3FCA4E01C2154CF00CFF703 /* Assets.xcassets */,
 				D3FCA4E21C2154CF00CFF703 /* LaunchScreen.storyboard */,
@@ -140,6 +148,7 @@
 		D3FCA4D41C2154CF00CFF703 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D38491E71C45EDF300A466B7 /* CoreImage.framework */,
 				D3EEFB681C224DC6005E96B6 /* MobileCoreServices.framework */,
 				D3FCA5191C2166AF00CFF703 /* ImageIO.framework */,
 				D3FCA5091C21552C00CFF703 /* Images */,
@@ -328,6 +337,7 @@
 				D37D5EAD1C3519EB0020D61A /* YZImageView+GestureControl.m in Sources */,
 				D3FCA5181C215E9100CFF703 /* YZImageView.m in Sources */,
 				D3FCA4D91C2154CF00CFF703 /* AppDelegate.m in Sources */,
+				D38491E41C451CF700A466B7 /* ProgressiveViewController.m in Sources */,
 				D3FCA5151C215E7200CFF703 /* YZAnimationImage.m in Sources */,
 				D3FCA4D61C2154CF00CFF703 /* main.m in Sources */,
 			);

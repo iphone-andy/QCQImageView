@@ -27,6 +27,19 @@
     self.test2.animatedImage = (YZAnimationImage *)[YZAnimationImage imageNamed:@"test2"];
     self.test3.animatedImage = (YZAnimationImage *)[YZAnimationImage imageNamed:@"test3@2x"];
     [self.test3 addPanControl];
+    UIImageView *imageView;
+    NSArray *imgArray;
+    
+    
+    //把存有UIImage的数组赋给动画图片数组
+    imageView.animationImages = imgArray;
+    //设置执行一次完整动画的时长
+    imageView.animationDuration = 6*0.15;
+    //动画重复次数 （0为重复播放）
+    imageView.animationRepeatCount = 0;
+    //开始播放动画
+    [imageView startAnimating];
+    
 
 }
 
